@@ -10,7 +10,7 @@ const Navbar = () => {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 md:px-10">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 md:pe-8">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
           href="#about-me"
@@ -24,12 +24,10 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="font-bold md:ml-[10px] text-gray-300">
-            S.Y.S Dev
-          </span>
+          <span className="font-bold md:ml-[10px]  text-white">S.Y.S Dev</span>
         </a>
 
-        <div className="w-[500px] h-full md:flex flex-row items-center justify-between md:mx-10">
+        <div className=" hidden md:flex flex-row items-center justify-between  w-[500px] h-full md:mx-10">
           <div className="hidden md:flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             {/* Menu links for desktop */}
             {/* <div className="hidden md:flex items-center"> */}
