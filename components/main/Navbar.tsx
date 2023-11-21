@@ -10,7 +10,7 @@ const Navbar = () => {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 md:px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
           href="#about-me"
@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* Hamburger icon for mobile */}
         <div
-          className="md:hidden cursor-pointer text-white "
+          className="md:hidden cursor-pointer text-white mx-8"
           onClick={toggleMenu}
         >
           {isMenuOpen ? "✕" : "☰"}
@@ -56,14 +56,14 @@ const Navbar = () => {
 
         {/* Responsive menu for mobile */}
         {isMenuOpen && (
-          <div className="md:hidden transition-all text-white p-5 rounded-md absolute top-10 right-10 border border-[#7042f861]	 shadow-lg shadow-[#2A0E61]/50 bg-[#0300145e] backdrop-blur-xl ">
-            <a href="#about-me" className="cursor-pointer block py-2 shadow-lg">
+          <div className="md:hidden transition-all text-white p-5 rounded-md absolute top-10 right-5 border border-[#7042f861]	 shadow-lg shadow-[#2A0E61]/50 bg-[#0300145e] backdrop-blur-xl ">
+            <a href="#about-me" className="cursor-pointer block py-2 ">
               About me
             </a>
-            <a href="#skills" className="cursor-pointer block py-2 shadow-lg">
+            <a href="#skills" className="cursor-pointer block py-2 ">
               Skills
             </a>
-            <a href="#projects" className="cursor-pointer block py-2 shadow-lg">
+            <a href="#projects" className="cursor-pointer block py-2 ">
               Projects
             </a>
           </div>
